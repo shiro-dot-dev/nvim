@@ -101,8 +101,8 @@ vim.keymap.set("n", "<C-a>", "+")
 vim.keymap.set("n", "<C-x>", "_")
 
 -- swap key ; and : for command mode
-vim.keymap.set("n", ";", ":")
-vim.keymap.set("n", ":", ";")
+-- vim.keymap.set("n", ";", ":")
+-- vim.keymap.set("n", ":", ";")
 
 -- undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
