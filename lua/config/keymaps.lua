@@ -106,3 +106,12 @@ vim.keymap.set("n", "<C-x>", "_")
 
 -- undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+
+-- remove LazyVim's Ctrl window maps
+local del = vim.keymap.del
+for _, mode in ipairs({ "n", "t" }) do
+  pcall(del, mode, "<C-h>")
+  pcall(del, mode, "<C-j>")
+  pcall(del, mode, "<C-k>")
+  pcall(del, mode, "<C-l>")
+end
